@@ -1,5 +1,10 @@
 part 1 ---- color filter over b&w animation
 
+# Add subtitle 
+00:00:00,162 --> 00:00:02,875
+Hello, this is our homework!
+
+
 #accelerate video 
 ffmpeg -i samplevideo.mp4 -an -filter:v “setpts=0.5*PTS” out.mp4
 ffmpeg -i out.mp4 -vf subtitles=sub.srt out_sub.mp4
