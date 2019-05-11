@@ -23,8 +23,8 @@ private:
     ofVec3f acceleration;
     ofColor particlecolor;
     vector<ofVec3f> log;
-    float max_speed;
-    float max_force;
+    float maxspeed;
+    float maxforce;
     float radius;
     float particlesize;
 
