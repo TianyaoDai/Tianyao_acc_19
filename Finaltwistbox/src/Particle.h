@@ -21,13 +21,12 @@ private:
     ofVec3f start_location;
     ofVec3f velocity;
     ofVec3f acceleration;
-    ofColor bodycolor;
+    ofColor particlecolor;
     vector<ofVec3f> log;
     float max_speed;
     float max_force;
     float radius;
-    float angle;
-    float bodysize;
+    float particlesize;
 
   
 };
