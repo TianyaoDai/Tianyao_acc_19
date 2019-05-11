@@ -18,8 +18,8 @@ Particle::Particle(float x, float y, float z)
     this->max_force = 2; //
     this->radius = 200; //shape of the movement is sphere
  // set blue color 
-    this->bodycolor.setHsb(ofRandom(100,170), 255, 255,175);
-    this->bodysize = 40;
+    this->particlecolor.setHsb(ofRandom(100,170), 255, 255,175);
+    this->particlesize = 40;
     
 }
 Particle::~Particle()
@@ -91,9 +91,9 @@ void Particle::draw()
 {
     ofPushMatrix();
     ofTranslate(this->location);
-    ofSetColor(this->bodycolor);
+    ofSetColor(this->particlecolor);
     //ofDrawSphere(this->body_size);
-    ofBox(this->bodysize);
+    ofBox(this->particlesize);
     ofPopMatrix();
 }
 
